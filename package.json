@@ -1,6 +1,6 @@
 {
   "name": "openride-shared",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Shared fiels between server and client",
   "main": "index.js",
   "scripts": {
