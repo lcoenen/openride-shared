@@ -1,19 +1,14 @@
 {
   "name": "openride-shared",
   "version": "0.1.0",
-  "description": "Shared fiels between server and client",
-  "main": "index.js",
+  "description": "Shared models and interface between server and client",
+  "main": "js/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "link": "ln -s ../server/node_modules node_modules",
-    "compile": "tsc",
-    "runreset": "node built/shared/bin/resetmock.js",
-    "reset": "npm run compile && npm run runreset",
-    "watch": "nodemon -w mocks/* -m models/* -m bin -V --exec 'npm run reset'"
+    "compile": "tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/lcoenen/OpenRide.git"
+    "url": "git+ssh://git@github.com/lcoenen-shared/OpenRide.git"
   },
   "keywords": [
     "Openride"
@@ -21,21 +16,23 @@
   "author": "Loïc Coenn",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lcoenen/OpenRide/issues"
+    "url": "https://github.com/lcoenen/OpenRide-shared/issues"
   },
-  "homepage": "https://github.com/lcoenen/OpenRide#readme",
+  "homepage": "https://github.com/lcoenen-shared/OpenRide#readme",
   "dependencies": {
     "@types/redis": "^2.8.6",
     "es6-promise": "^4.2.4",
     "geojson": "^0.5.0",
     "moment": "^2.22.2",
-    "mongo": "^0.1.0"
+    "mongo": "^0.1.0",
+    "typescript": "^3.1.3"
   },
   "devDependencies": {
-    "@types/chai": "^4.1.5",
+    "@types/chai": "^4.1.6",
     "@types/geojson": "^7946.0.4",
     "@types/mongodb": "^3.1.4",
-    "@types/restify": "^7.2.4",
+    "@types/node": "^10.12.0",
+    "@types/restify": "^7.2.5",
     "redis": "^2.8.0"
   }
 }
