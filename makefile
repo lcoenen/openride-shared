@@ -16,3 +16,6 @@ publish:
 	@echo "Pulishing the module"
 	npm version patch
 	npm publish
+
+clean:
+	rm js/* -fr

@@ -26,7 +26,7 @@ export interface Ride {
   _id?: string;
   origin?: Feature<Point>;
   destination?: Feature<Point>;
-  riding_time?: Date | string;
+  riding_time?: string;
   payement?: number;
   driver?: Link | User;
 	riders: Link[] | User[];
@@ -34,6 +34,7 @@ export interface Ride {
 	type: RideType;
 	requests?: Link[];
 	confirmed?: boolean;
+	finalized?: boolean;
 };
 
 /*
