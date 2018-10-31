@@ -10,6 +10,7 @@
  */
 export interface User {
   _id?: string;
+	avatar: string;		// Base 64 
 	name: string;
 	password?: string; //	SHA encrypted
   age: number;
